@@ -54,7 +54,7 @@ public class Predictions {
 			XMLEncoder encoder = new XMLEncoder(out);
 			encoder.writeObject(obj);
 			encoder.close();
-			xml = encoder.toString();
+			xml = out.toString();
 		} catch (Exception e) {
 		}
 		return xml;
